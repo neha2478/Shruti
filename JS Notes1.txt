@@ -1,0 +1,18 @@
+identifiers are the name given for the javascript code.
+
+
+Rules:- 1> Cannot use keywords as a identifier.
+	2> Cannot use numbers as a identifier.
+	Varchar = 12
+
+	3> Cannot use special characters as a identifiers except '$' and '-'
+
+Literals:- Literals are the values 
+		they are classified into primiyive and non primitive data types
+
+	PDT:- Number, String, Boolean, Null, Undefined, BigInt
+
+	NPDT:- Functions, Array, Object
+
+In JS we can declare data type using 3 ways
+var, const, let
