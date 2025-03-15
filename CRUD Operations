@@ -1,0 +1,52 @@
+CRUD Operation :-
+
+//To create the table
+Create Table Register{
+    Id INT Primarykey Auto_Increment,
+    Name VARCHAR(225) NOT NULL,
+    Email VARCHAR(225) NOT NULL,
+    DateOFBirth DATE,
+    Gender CHAR(10),
+    Address CHAR(25)
+}
+
+//Insert Data To Table :-
+INSERT INTO Register VALUES ( 1, "Shruti" , "shruti@gmail.com" , 45 , "Female" , "Delhi" );
+INSERT INTO Register VALUES ( 2, "Neha" , "neha@gmail.com" , 36 , "Female", "Panagarh" );
+INSERT INTO Register VALUES ( 3, "Jyoti" , "joe@gmail.com" , 49 , "Female  , "bengluru");
+INSERT INTO Register VALUES ( 4, "Shampa" , "shampa@gmail.com" , 70 , "Female" , "Chennai" );
+INSERT INTO Register VALUES ( 5, "Prashant" , "prashant@gmail.com" , 77 , "Male" , "Asansol" );
+INSERT INTO Register VALUES ( 6, "Rupesh" , "prashant@gmail.com" , 80 , "Male" , "Bilashpur" );
+
+
+//Read :-
+a >Select ID, Name, Gender, Address from Customers Where Name = "Shruti" ;
+
+b> Select ID, Name from Customers Where Name = "Shruti" and Emal = "shampa@gmail.com";
+
+c> Select ID, Name, Gender, Address from Customers Where Name = "Shruti" ;
+
+d> Select * from Customers Where age > 80 ;
+
+e> Select * from Customers Where age >=  22 and age <= 30 ;
+
+//Update :-
+a>  UPDATE Register
+    SET Name = "Shubham", age = 45, country = "DUBAI"
+    WHERE customer_id = 6;
+
+    Select * from Register; //to check the details...
+
+  B>  UPDATE Register
+    SET Email = "prash23456@gmail.com"
+    WHERE Name = "Prashant;
+    
+    Select * from Register;
+
+//Delete :- 
+
+DELETE FROM Register
+WHERE Name = "Shampa"; // this will delete the data which matches the condition...
+
+DELETE FROM Register
+WHERE email IS NULL;
